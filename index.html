@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GlowGel – לק ג'ל לציפורניים</title>
+<meta name="description" content="לק ג'ל מקצועי: ברק עמיד עד 3 שבועות, והכירו את המבנה האנטומי של הציפורן.">
+<style>
+:root{--bg:#fff8f9;--ink:#2a1a22;--muted:#7a6670;--rose:#d63f78;--plum:#6b1f4b;--soft:#fde3ec;--card:#fff;--line:#f0d3de}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1218;--ink:#fbeef3;--muted:#c3a8b4;--rose:#ff6fa3;--plum:#ffb3d0;--soft:#2e1b25;--card:#25161f;--line:#46283a}}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+.wrap{max-width:1080px;margin:auto;padding:0 16px}
+header{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;font-size:1.3rem;color:var(--rose)}
+nav a{color:var(--ink);text-decoration:none;margin-inline-start:18px;font-size:.95rem}
+.hero{padding:72px 0;display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;margin:0 0 16px;color:var(--plum)}
+.btn{display:inline-block;background:var(--rose);color:#fff;padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:700}
+.hero p{color:var(--muted);font-size:1.15rem}
+section{padding:56px 0}
+h2{font-size:1.9rem;margin:0 0 8px;color:var(--plum)}
+.sub{color:var(--muted);margin:0 0 28px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card b{display:block;font-size:1.1rem;margin-bottom:4px;color:var(--rose)}
+.anat{display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:start}
+.anat svg{width:100%;max-width:340px;margin:auto;display:block}
+.part{cursor:pointer;transition:filter .2s,stroke-width .2s}
+.part:hover,.part.on{filter:brightness(.9);stroke:var(--rose);stroke-width:3}
+.list{display:grid;gap:8px}
+.list button{font:inherit;text-align:start;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer}
+.list button.on{border-color:var(--rose);background:var(--soft)}
+#info{background:var(--soft);border-radius:16px;padding:16px 18px;margin-top:12px;min-height:96px}
+#info h3{margin:0 0 4px;color:var(--plum)}
+.swatches{display:flex;flex-wrap:wrap;gap:14px}
+.sw{width:84px;text-align:center;font-size:.85rem;color:var(--muted)}
+.sw i{display:block;width:84px;height:84px;border-radius:50% 50% 46% 46%;margin-bottom:6px;box-shadow:inset 0 -8px 14px rgba(0,0,0,.12),inset 0 8px 12px rgba(255,255,255,.5)}
+ol{padding-inline-start:22px}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted)}
+@media(max-width:760px){.hero,.anat{grid-template-columns:1fr}nav a:not(.btn){display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<span class="logo">GlowGel</span>
+<span><a href="#anatomy">אנטומיה</a><a href="#why">למה ג'ל</a><a href="#colors">צבעים</a><a href="#steps">איך זה עובד</a></span>
+</nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>ברק מושלם.<br>עד 3 שבועות.</h1>
+<p>לק ג'ל מקצועי שמתייבש תחת מנורת LED, לא נסדק, לא מתקלף, ועדין לציפורן הטבעית.</p>
+<a class="btn" href="#colors">לצפייה בקולקציה</a>
+</div>
+<svg viewBox="0 0 240 280" role="img" aria-label="ציור ציפורן מבריקה">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8fb7"/><stop offset="1" stop-color="#b3235f"/></linearGradient></defs>
+<path d="M50 280V120a70 70 0 0 1 140 0v160z" fill="#f6c9b4"/>
+<path d="M72 180V110a48 48 0 0 1 96 0v70a48 48 0 0 1-96 0z" fill="url(#g)"/>
+<path d="M92 80q10-30 40-34" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity=".6"/>
+</svg>
+</div>
+
+<section id="anatomy">
+<h2>המבנה האנטומי של הציפורן</h2>
+<p class="sub">לפני שצובעים, כדאי להכיר. לחצו על חלק בציור או ברשימה.</p>
+<div class="anat">
+<svg viewBox="0 0 300 380" role="img" aria-label="תרשים אנטומי של ציפורן">
+<path d="M45 380V150a105 105 0 0 1 210 0v230z" fill="#f6c9b4"/>
+<g id="parts">
+<path class="part" data-k="fold" d="M82 70h-14v190h14zM218 70h14v190h-14z" fill="#e7a58f"/>
+<path class="part" data-k="plate" d="M82 70h136v165H82z" fill="#fbe3e6"/>
+<path class="part" data-k="bed" d="M92 105h116v130H92z" fill="#f6b3bd"/>
+<path class="part" data-k="free" d="M82 70h136v32H82z" fill="#fff"/>
+<path class="part" data-k="lunula" d="M104 235a46 46 0 0 1 92 0z" fill="#fffaf8"/>
+<path class="part" data-k="cuticle" d="M82 235h136v14H82z" fill="#d98f7c"/>
+<path class="part" data-k="eponychium" d="M82 249q68-20 136 0v30q-68-20-136 0z" fill="#eaa994"/>
+<ellipse class="part" data-k="matrix" cx="150" cy="320" rx="60" ry="26" fill="#c9685f" opacity=".75" stroke-dasharray="6 4" stroke="#7b2d2a" stroke-width="2"/>
+</g>
+<text x="150" y="325" text-anchor="middle" font-size="14" fill="#fff" pointer-events="none">מטריקס</text>
+</svg>
+<div>
+<div class="list" id="list"></div>
+<div id="info"></div>
+</div>
+</div>
+</section>
+
+<section id="why">
+<h2>למה לק ג'ל?</h2><p class="sub">כל מה שלק רגיל מבטיח, ועוד קצת.</p>
+<div class="cards">
+<div class="card"><b>עמידות 2–3 שבועות</b>בלי סדקים, בלי קילופים, גם בעבודות בית.</div>
+<div class="card"><b>ייבוש מיידי</b>60 שניות בנורת LED והציפורניים מוכנות.</div>
+<div class="card"><b>ברק מראה</b>גימור מבריק שלא דוהה עם הזמן.</div>
+<div class="card"><b>עדין לציפורן</b>מסירים בהשרייה ולא בגרידה, כך שהציפורן נשמרת.</div>
+</div>
+</section>
+
+<section id="colors">
+<h2>הקולקציה</h2><p class="sub">שישה גוונים שהכי אוהבים.</p>
+<div class="swatches">
+<div class="sw"><i style="background:#d63f78"></i>ורד עז</div>
+<div class="sw"><i style="background:#f4c2c2"></i>נודי</div>
+<div class="sw"><i style="background:#8c1c2e"></i>יין</div>
+<div class="sw"><i style="background:#5b3a8e"></i>סגול לילה</div>
+<div class="sw"><i style="background:#e8b4a0"></i>אפרסק</div>
+<div class="sw"><i style="background:#1d1d24"></i>שחור</div>
+</div>
+</section>
+
+<section id="steps">
+<h2>איך זה עובד</h2>
+<ol>
+<li>הכנת הציפורן: דחיקת העור, שיוף עדין וניקוי.</li>
+<li>שכבת בסיס, ואז ייבוש 30–60 שניות במנורה.</li>
+<li>שתי שכבות צבע דקות, כל אחת עם ייבוש.</li>
+<li>שכבת טופ מבריקה וייבוש אחרון.</li>
+<li>ניקוי שכבה דביקה, ושמן קוטיקולה לגימור.</li>
+</ol>
+</section>
+</main>
+<footer>© GlowGel · כל הזכויות שמורות</footer>
+
+<script>
+const D={
+free:["קצה חופשי","החלק הלבן שמעבר לקצה האצבע. אין בו רקמה חיה, ולכן אפשר לגזור ולשייף אותו."],
+plate:["לוחית הציפורן","השכבה הקשה והשקופה, עשויה קרטין. זה המשטח שעליו מורחים את הלק."],
+bed:["מצע הציפורן","העור הוורוד שמתחת ללוחית. עשיר בכלי דם, ולכן הציפורן ורדרדה."],
+lunula:["לונולה","חצי הירח הבהיר בבסיס הציפורן. זו הנקודה הנראית של אזור הצמיחה."],
+cuticle:["קוטיקולה","שכבה דקה שאוטמת את הבסיס ומגינה מפני חיידקים. לא חותכים אותה אלא דוחפים בעדינות."],
+eponychium:["אפוניכיום","קפל העור החי שמעל הקוטיקולה, וממנו היא יוצאת."],
+fold:["קפלים צדדיים","העור משני צדי הציפורן. כאן נוצרים ציפורן חודרנית ודלקות."],
+matrix:["מטריקס","שורש הציפורן, מתחת לעור. כאן נוצרים תאים חדשים, ופגיעה בו משנה את צורת הציפורן לצמיתות."]};
+const list=document.getElementById("list"),info=document.getElementById("info");
+const order=["free","plate","bed","lunula","cuticle","eponychium","fold","matrix"];
+function show(k){
+ document.querySelectorAll("[data-k],#list button").forEach(e=>e.classList.toggle("on",(e.dataset.k||e.dataset.b)===k));
+ info.innerHTML="<h3>"+D[k][0]+"</h3><p>"+D[k][1]+"</p>";
+}
+order.forEach(k=>{const b=document.createElement("button");b.textContent=D[k][0];b.dataset.b=k;b.onclick=()=>show(k);list.append(b)});
+document.querySelectorAll(".part").forEach(p=>p.addEventListener("click",()=>show(p.dataset.k)));
+show("plate");
+</script>
+</body>
+</html>
